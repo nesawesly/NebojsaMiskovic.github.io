@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link href='./style2.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="page__header header">
+        <div class="header__container container">
+          <div class="header__body">
+            <div class="header__leftside">
+              <a href="#" title="" class="header__logo"></a>
+            </div>
+            <div class="header__rightside">
+              <div class="header__menu header-menu">
+                <ul class="header-menu__list">
+                  <li class="header-menu__item">
+                    <a href="/index.html" title="" class="header-menu__link">Home</a>
+                  </li>
+                  <li class="header-menu__item">
+                    <a href="./index2.html" title="" class="header-menu__link">Play a Game</a>
+                  </li>
+                  <li class="header-menu__item">
+                    <a href="#" title="" class="header-menu__link">Skills</a>
+                  </li>
+                 
+                  <li class="header-menu__item">
+                    <a href="https://soccerbet.rs/#UserProfile/SlipOverview" title="" class="header-menu__link">Portfolio</a>
+                  </li>
+                  <li class="header-menu__item">
+                    <a href="#" title="" class="header-menu__link">Contact</a>
+                  </li>
+                </ul>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </header>
+
+<!-- Game canvas -->
+<canvas id="c"></canvas>
+
+<!-- Gameplay HUD -->
+<div class="hud">
+	<div class="hud__score">
+		<div class="score-lbl"></div>
+		<div class="cube-count-lbl"></div>
+	</div>
+	<div class="pause-btn"><div></div></div>
+	<div class="slowmo">
+		<div class="slowmo__bar"></div>
+	</div>
+</div>
+
+<!-- Menu System -->
+<div class="menus">
+	<div class="menu menu--main">
+		<h1>MENJA</h1>
+		<button type="button" class="play-normal-btn">PLAY GAME</button>
+		<button type="button" class="play-casual-btn">CASUAL MODE</button>
+		<div class="credits">An 8kB game by <a href="https://cmiller.tech">Caleb Miller</a></div>
+	</div>
+	<div class="menu menu--pause">
+		<h1>Paused</h1>
+		<button type="button" class="resume-btn">RESUME GAME</button>
+		<button type="button" class="menu-btn--pause">MAIN MENU</button>
+	</div>
+	<div class="menu menu--score">
+		<h1>Game Over</h1>
+		<h2>Your Score:</h2>
+		<div class="final-score-lbl"></div>
+		<div class="high-score-lbl"></div>
+		<button type="button" class="play-again-btn">PLAY AGAIN</button>
+		<button type="button" class="menu-btn--score">MAIN MENU</button>
+	</div>
+</div>
+<script src="./index2.js"></script>
+</body>
+</html>
